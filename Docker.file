@@ -1,0 +1,7 @@
+FROM python 3.6
+MAINTAINER Mudit Katiyar
+COPY ./dockerAssignment
+WORKDIR ./dockerAssignment
+RUN pip install -r requirements.txt
+ENTRYPOINT ["python"]
+CMD ["Car-price-prediction-linear-regression-Intro-version.ipynb"]
